@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Non-Profit Partners"
-        android:id="@+id/notProfitButton"
+        android:id="@+id/nonProfitButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/white"
@@ -32,9 +32,9 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Sponsors"
         android:id="@+id/sponsorsButton"
-        android:layout_above="@+id/notProfitButton"
+        android:layout_above="@+id/nonProfitButton"
         android:layout_centerHorizontal="true"
         android:backgroundTint="@android:color/holo_blue_light"
         android:textColor="@android:color/white"/>
