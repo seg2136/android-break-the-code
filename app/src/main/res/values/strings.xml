@@ -7,4 +7,5 @@
     <string name="title_activity_non_profit">NonProfitActivity</string>
     <string name="title_activity_enroll">EnrollActivity</string>
     <string name="title_activity_sponsors">SponsorsActivity</string>
+    <string name="app_camp_info">App Camp For Girls is a place where girls can put their creative powers to work, designing and building apps, while learning more about the business of software and being inspired by women mentors in the field.</string>
 </resources>

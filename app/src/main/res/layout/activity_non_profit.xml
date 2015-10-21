@@ -11,32 +11,34 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/partnerImage"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/app_camp_for_girls"
-        android:contentDescription="App Camp for Girls Logo"/>
+        android:id="@+id/appCampImage"
+        android:src="@mipmap/app_camp_for_girls"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="App Camp For Girls"
-        android:id="@+id/nameLabel"
-        android:layout_below="@+id/partnerImage"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/AppCampNameLabel"
         android:textColor="@android:color/black"
         android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_below="@+id/appCampImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="App Camp For Girls is a place where girls can put their creative powers to work, designing and building apps, while learning more about the business of software and being inspired by women mentors in the field.  "
-        android:id="@+id/textView3"
-        android:layout_below="@+id/nameLabel"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:text="@string/app_camp_info"
+        android:id="@+id/appCampInfo"
         android:textColor="@android:color/black"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:layout_below="@+id/AppCampNameLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
 
 </RelativeLayout>
