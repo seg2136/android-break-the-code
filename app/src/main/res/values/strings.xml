@@ -8,4 +8,5 @@
     <string name="title_activity_enroll">EnrollActivity</string>
     <string name="title_activity_sponsors">SponsorsActivity</string>
     <string name="app_camp_info">App Camp For Girls is a place where girls can put their creative powers to work, designing and building apps, while learning more about the business of software and being inspired by women mentors in the field.</string>
+    <string name="enroll_info">To help create that supportive environment, on August 10, we\'ll start our first-ever all women class for Java/Android development for 30 students.</string>
 </resources>
