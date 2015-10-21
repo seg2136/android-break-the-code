@@ -21,7 +21,7 @@
         android:text="App Camp For Girls"
         android:id="@+id/AppCampNameLabel"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:layout_below="@+id/appCampImage"
         android:layout_centerHorizontal="true"
@@ -40,5 +40,17 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Main"
+        android:id="@+id/homeButton"
+        android:background="#3399ff"
+        android:textColor="@android:color/white"
+        android:width="150dp"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
