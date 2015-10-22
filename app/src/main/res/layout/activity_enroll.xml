@@ -23,165 +23,63 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Women&apos;s Java/Android Class"
-        android:id="@+id/enrollHeadingLabel"
-        android:textSize="24sp"
-        android:textColor="#3a53a4"
-        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enrollment Information"
+        android:id="@+id/infoLabel"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="12dp"/>
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enroll_info"
-        android:id="@+id/enrollInfo"
-        android:layout_below="@+id/enrollHeadingLabel"
-        android:layout_centerHorizontal="true"
-        android:textSize="16sp"
-        android:textColor="@android:color/black"
-        android:layout_marginTop="12dp"/>
+        android:text="Enter your name and email below and we will send you more information about enrollment."
+        android:id="@+id/textView3"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/infoLabel"
+        android:layout_centerHorizontal="true"/>
 
-    <ImageView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/clockIcon"
-        android:src="@drawable/clock_icon"
-        android:contentDescription="Clock Icon"
-        android:layout_below="@+id/enrollInfo"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"/>
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nameText"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/infoLabel"
+        android:layout_alignEnd="@+id/infoLabel"
+        android:hint="Name"/>
 
-    <ImageView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tagIcon"
-        android:src="@drawable/tag_icon"
-        android:layout_alignRight="@+id/clockIcon"
-        android:layout_alignEnd="@+id/clockIcon"
-        android:layout_below="@+id/clockIcon"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="42dp"/>
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailText"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_alignStart="@+id/nameText"
+        android:hint="Email"/>
 
-    <ImageView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/checkIcon"
-        android:src="@drawable/check_icon"
-        android:layout_gravity="center"
-        android:layout_below="@+id/tagIcon"
-        android:layout_alignRight="@+id/clockIcon"
-        android:layout_marginTop="42dp"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/calIcon"
-        android:src="@drawable/cal_icon"
-        android:layout_below="@+id/checkIcon"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="60dp"
-        android:layout_alignRight="@+id/clockIcon"/>
+        android:text="Submit"
+        android:id="@+id/submitButton"
+        android:layout_below="@+id/emailText"
+        android:layout_alignRight="@+id/emailText"
+        android:layout_alignEnd="@+id/emailText"
+        android:layout_alignLeft="@+id/emailText"
+        android:layout_alignStart="@+id/emailText"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Class Length:"
-        android:id="@+id/classLengthText"
-        android:layout_alignTop="@+id/clockIcon"
-        android:layout_toRightOf="@+id/clockIcon"
-        android:layout_toEndOf="@+id/clockIcon"
-        android:layout_marginLeft="24sp"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:layout_alignBaseline="@+id/clockIcon"
-        android:textSize="16sp"
-        android:layout_below="@+id/clockIcon"/>
+        android:text="New Text"
+        android:id="@+id/thankYouLabel"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:layout_below="@+id/nameText"
+        android:layout_centerHorizontal="true"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="5 Weeks"
-        android:id="@+id/fiveWeeksText"
-        android:textSize="16sp"
-        android:textColor="#575250"
-        android:layout_below="@+id/clockIcon"
-        android:layout_alignLeft="@+id/classLengthText"
-        android:layout_alignStart="@+id/classLengthText"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cost:"
-        android:id="@+id/costText"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:layout_alignTop="@+id/tagIcon"
-        android:layout_alignLeft="@+id/classLengthText"
-        android:layout_alignStart="@+id/classLengthText"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="$1,000 ($850 if full tuition is paid up-front)"
-        android:id="@+id/tuitionInfoText"
-        android:textSize="16sp"
-        android:textColor="#575250"
-        android:layout_below="@+id/tagIcon"
-        android:layout_alignLeft="@+id/costText"
-        android:layout_alignStart="@+id/costText"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Prerequisites:"
-        android:id="@+id/prereqsText"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:layout_alignTop="@+id/checkIcon"
-        android:layout_alignLeft="@+id/costText"
-        android:layout_alignStart="@+id/costText"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Introduction to Programming (or code sample that demonstrates proficiency)"
-        android:id="@+id/introToProgrammingText"
-        android:textSize="16sp"
-        android:textColor="#575250"
-        android:layout_below="@+id/prereqsText"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/prereqsText"
-        android:layout_alignStart="@+id/prereqsText"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Upcoming Classes:"
-        android:id="@+id/upcomingClassesText"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:layout_alignTop="@+id/calIcon"
-        android:layout_alignLeft="@+id/introToProgrammingText"
-        android:layout_alignStart="@+id/introToProgrammingText"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="January 4 and April 18 (This is the schedule we expect, though changes may occur due to unforeseen events, classes we are unable to fill, etc.)"
-        android:id="@+id/classDatesText"
-        android:textSize="16sp"
-        android:textColor="#575250"
-        android:layout_below="@+id/calIcon"
-        android:layout_alignLeft="@+id/upcomingClassesText"
-        android:layout_alignStart="@+id/upcomingClassesText"/>
 </RelativeLayout>

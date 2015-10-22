@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/appCampImage"
+        android:id="@+id/partnerImage"
         android:src="@drawable/app_camp_for_girls"
         android:layout_centerHorizontal="true"/>
 
@@ -19,11 +19,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="App Camp For Girls"
-        android:id="@+id/AppCampNameLabel"
+        android:id="@+id/nameLabel"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_below="@+id/appCampImage"
+        android:layout_below="@+id/partnerImage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"/>
 
@@ -31,10 +31,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_camp_info"
-        android:id="@+id/appCampInfo"
+        android:id="@+id/descriptionLabel"
         android:textColor="@android:color/black"
         android:textSize="16sp"
-        android:layout_below="@+id/AppCampNameLabel"
+        android:layout_below="@+id/nameLabel"
         android:layout_alignParentStart="true"
         android:layout_marginTop="6dp"
         android:layout_alignParentEnd="true"
@@ -51,6 +51,16 @@
         android:width="150dp"
         android:textSize="16sp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_alignRight="@+id/descriptionLabel"
+        android:layout_alignEnd="@+id/descriptionLabel"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Partner"
+        android:id="@+id/nextButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
 
 </RelativeLayout>

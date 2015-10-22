@@ -28,28 +28,6 @@
         android:textStyle="bold"
         android:layout_marginTop="12dp"/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/columbiaUltimateImage"
-        android:src="@drawable/columbia_ultimate"
-        android:contentDescription="Columbia Ultimate Logo"
-        android:layout_above="@+id/homeButton"
-        android:layout_alignRight="@+id/homeButton"
-        android:layout_alignEnd="@+id/homeButton"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Columbia Ultimate"
-        android:id="@+id/columbiaUltNameLabel"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_below="@+id/columbiaUltimateImage"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="12sp"/>
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
